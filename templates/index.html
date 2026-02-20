@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCP Ethical Simulation</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>UCP v2.0 Ethical Simulation</h1>
+  <section>
+    <label for="roleSelect">Role:</label>
+    <select id="roleSelect">
+      <option value="Instructor">Instructor</option>
+      <option value="Researcher">Researcher</option>
+      <option value="Practitioner">Practitioner</option>
+    </select>
+    <button id="loadPresetBtn">Load Preset</button>
+  </section>
+  <section>
+    <label for="moduleSelect">Select Module:</label>
+    <select id="moduleSelect">
+      <option value="Ethical Dilemma: Trolley Problem">Trolley Problem</option>
+      <option value="Whistleblower Simulation">Whistleblower</option>
+      <option value="Paradigm Shift and PRF Drift">PRF Shift</option>
+    </select>
+    <p id="moduleDescription"></p>
+  </section>
+  <section>
+    <h2>Agent Setup</h2>
+    <textarea id="agentInput" rows="8" cols="60">
+[
+  {"name": "Ada", "identity_kernel": "integrity", "ita_role": "engineer", "prf": "consequentialist"},
+  {"name": "Turing", "identity_kernel": "logic", "ita_role": "scientist", "prf": "deontologist"}
+]
+    </textarea><br>
+    <button id="simulateBtn">Run Simulation</button>
+  </section>
+  <section>
+    <h2>Simulation Results</h2>
+    <pre id="output"></pre>
+  </section>
+  <script src="/static/app.js"></script>
+</body>
+</html>
