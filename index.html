@@ -1432,7 +1432,7 @@
 
 
 
-        /* Step 7.4 Functional Equivalence Coordination Game */
+        /* Step 7.4.1 Functional Equivalence Coordination Game */
         .coord-outcome-panel {
             background: white;
             border: 1px solid #d1d5db;
@@ -1515,7 +1515,7 @@
         <div class="container">
             <h1>🧭 The Capability Lab</h1>
             <p>Agency, Coordination, and Layered Emergence</p>
-            <p class="subtitle">Step 7.4 production build: evidence-calibrated learning environment with Simulation Studio, Schelling emergence, Functional Equivalence term guide, PRF character pairs, Challenger ethics preset, Navigator Bridge, reset controls, source-note discipline, and citation-supported classroom use.</p>
+            <p class="subtitle">Step 7.4.1 production build: evidence-calibrated learning environment with Simulation Studio, Schelling emergence, Functional Equivalence term guide, PRF character pairs, Challenger ethics preset, Navigator Bridge, reset controls, source-note discipline, and citation-supported classroom use.</p>
         </div>
     </header>
 
@@ -1795,7 +1795,7 @@
                 <div class="card">
                     <h2>Simulation Studio: Local Rules, Emergent Patterns, and Functional Equivalence</h2>
                     <div class="evidence-badges"><span class="evidence-badge badge-formal">Formal Model</span><span class="evidence-badge badge-analogy">Analogy</span><span class="evidence-badge badge-pilot">Needs Real-World Testing</span></div>
-                    <div class="highlight-box info"><strong>Purpose:</strong> This Simulation Studio restores the experimental “Lab” layer. Step 7.1 lets you change simple local rules and observe how a larger pattern can emerge. Step 7.2 added a Functional Equivalence Coordination Game. Step 7.3 added key-term definitions, reset controls, and preloaded PRF pairs. Step 7.4 adds a Challenger-inspired engineering ethics preset and a Navigator Bridge that carries simulation insights into the student’s private Field Scan work.</div>
+                    <div class="highlight-box info"><strong>Purpose:</strong> This Simulation Studio restores the experimental “Lab” layer. Step 7.1 lets you change simple local rules and observe how a larger pattern can emerge. Step 7.2 added a Functional Equivalence Coordination Game. Step 7.3 added key-term definitions, reset controls, and preloaded PRF pairs. Step 7.4 added a Challenger-inspired engineering ethics preset and a Navigator Bridge; Step 7.4.1 adds the systemic-failure release for cases where one or two slider changes are not enough that carries simulation insights into the student’s private Field Scan work.</div>
 
                     <h3>What This Simulation Shows</h3>
                     <p>Schelling-style models show how local preferences can produce macro-patterns that no single person may have intended. In this simplified version, two groups of agents occupy a grid. Each agent is satisfied when enough nearby occupied neighbors are similar. Unsatisfied agents move to available spaces. Over time, small local preferences may generate visible clustering.</p>
@@ -1851,7 +1851,7 @@
 
 
                     <hr style="margin: 2.4rem 0; border: none; border-top: 1px solid #e5e7eb;">
-                    <h3>Step 7.4 Simulator: Functional Equivalence Coordination Game</h3>
+                    <h3>Step 7.4.1 Simulator: Functional Equivalence Coordination Game</h3>
                     <div class="evidence-badges"><span class="evidence-badge badge-formal">Formal Model</span><span class="evidence-badge badge-theory">Theoretical Integration</span><span class="evidence-badge badge-pilot">Needs Pilot Data</span></div>
                     <div class="highlight-box info"><strong>Purpose:</strong> This game models a basic Capability Lab idea: agents do not need identical beliefs to coordinate. They need enough functional compatibility, shared purpose, trust, translation effort, fair procedures, and repair capacity to act together despite PRF differences. This is a toy model for inquiry, not a validated measure of real people or groups.</div>
 
@@ -1891,6 +1891,11 @@
                         <ul id="coordPairDetails"></ul>
                         <p><strong>Student task:</strong> <span id="coordPairTask"></span></p>
                         <p><strong>Evidence caution:</strong> <span id="coordPairCaution">This is a teaching model. The sliders are not psychological measurements; they are prompts for thinking about coordination conditions.</span></p>
+                    </div>
+
+                    <div id="coordReleaseBox" class="highlight-box warning">
+                        <h4>Important: Breakdown may not have a one-slider solution</h4>
+                        <p>Some coordination failures are systemic. If one or two slider changes do not reach Conditional Coordination, do not treat that as failure. Treat it as the finding. Record what you tried, what happened, and then test a combination of three or four changes. The key question becomes: what set of institutional conditions would have to change before coordination becomes possible?</p>
                     </div>
 
 
@@ -1938,7 +1943,7 @@
                     <div class="interactive-quiz">
                         <p>Use this worksheet after changing the conditions and running several rounds.</p>
                         <div class="note-box"><label for="coordObservation">1. What coordination outcome did you observe?</label><textarea class="student-note" id="coordObservation" data-note-key="coordObservation" oninput="saveStudentNote(this)" placeholder="Example: High PRF difference did not prevent coordination when shared goals, fairness, and translation effort were high..."></textarea><span class="note-status" id="coordObservationStatus">Autosaves locally in this browser.</span></div>
-                        <div class="note-box"><label for="coordShiftTest">1b. Breakdown-to-Coordination test: What specific change shifted the outcome?</label><textarea class="student-note" id="coordShiftTest" data-note-key="coordShiftTest" oninput="saveStudentNote(this)" placeholder="Example: Raising institutional fairness from 22% to 65% changed the outcome from Breakdown to Conditional Coordination; in the real case, that might represent giving engineers formal stop authority or changing the burden of proof."></textarea><span class="note-status" id="coordShiftTestStatus">Autosaves locally in this browser.</span></div>
+                        <div class="note-box"><label for="coordShiftTest">1b. Breakdown-to-Coordination test: What did you try, and what did it show?</label><textarea class="student-note" id="coordShiftTest" data-note-key="coordShiftTest" oninput="saveStudentNote(this)" placeholder="Example: I first raised institutional fairness alone and still got Breakdown. I then raised fairness, translation effort, and working trust while lowering conflict pressure, which shifted the model to Conditional Coordination. That suggests the problem was systemic, not a one-slider fix."></textarea><span class="note-status" id="coordShiftTestStatus">Autosaves locally in this browser.</span></div>
                         <div class="note-box"><label for="coordAssumptions">2. What assumptions are built into this game?</label><textarea class="student-note" id="coordAssumptions" data-note-key="coordAssumptions" oninput="saveStudentNote(this)" placeholder="Example: The game assumes trust, shared goal clarity, translation effort, and fairness can be represented as simple sliders..."></textarea><span class="note-status" id="coordAssumptionsStatus">Autosaves locally in this browser.</span></div>
                         <div class="note-box"><label for="coordLimits">3. What does this game not show?</label><textarea class="student-note" id="coordLimits" data-note-key="coordLimits" oninput="saveStudentNote(this)" placeholder="Example: It does not show history, trauma, coercion, legal constraints, unequal resources, or the full depth of cultural meaning..."></textarea><span class="note-status" id="coordLimitsStatus">Autosaves locally in this browser.</span></div>
                         <div class="note-box"><label for="coordRealWorldTest">4. What would need to be tested in a real group?</label><textarea class="student-note" id="coordRealWorldTest" data-note-key="coordRealWorldTest" oninput="saveStudentNote(this)" placeholder="Example: Measure trust, shared-goal clarity, perceived fairness, communication quality, repair attempts, and actual task outcomes..."></textarea><span class="note-status" id="coordRealWorldTestStatus">Autosaves locally in this browser.</span></div>
@@ -2257,7 +2262,7 @@
 
                     <div class="portfolio-callout">
                         <h4>Portfolio Tip</h4>
-                        <p>The Step 7.4 export now includes your section notes, evidence audit, source notes, simulation observations, layered-emergence map, pilot metrics, and ATCF reflection values. This can become a Canvas submission, a discussion-board starter, or a private study portfolio.</p>
+                        <p>The Step 7.4.1 export now includes your section notes, evidence audit, source notes, simulation observations, layered-emergence map, pilot metrics, and ATCF reflection values. This can become a Canvas submission, a discussion-board starter, or a private study portfolio.</p>
                     </div>
 
                     <h3>ATCF Reflection Tool</h3>
@@ -2350,7 +2355,7 @@
                 <div class="card">
                     <h2>Instructor Toolkit: Canvas, Rubrics, and Classroom Deployment</h2>
                     <div class="evidence-badges"><span class="evidence-badge badge-theory">Teaching Design</span><span class="evidence-badge badge-pilot">Pilot-Ready</span></div>
-                    <div class="highlight-box info"><strong>Purpose:</strong> This Step 7.4 toolkit helps instructors turn the Capability Lab into a Canvas assignment, live class activity, online discussion, or pilot-ready assessment artifact.</div>
+                    <div class="highlight-box info"><strong>Purpose:</strong> This Step 7.4.1 toolkit helps instructors turn the Capability Lab into a Canvas assignment, live class activity, online discussion, or pilot-ready assessment artifact.</div>
 
                     <h3>Recommended Teaching Modes</h3>
                     <div class="deployment-grid">
@@ -2404,7 +2409,7 @@
         <div class="container">
             <p>&copy; 2026 The Capability Lab: Agency, Coordination, and Layered Emergence</p>
             <p style="margin-top: 0.5rem;">A learning environment for evidence calibration, layered emergence, ethical reflection, and responsible interdisciplinary inquiry.</p>
-            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Step 7.4 simulation build: evidence dossier, source notes, Schelling-style emergence, Functional Equivalence term guide, PRF character pairs, Challenger ethics preset, Navigator Bridge, reset controls, exports, and instructor deployment supports.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Step 7.4.1 simulation build: evidence dossier, source notes, Schelling-style emergence, Functional Equivalence term guide, PRF character pairs, Challenger ethics preset, Navigator Bridge, reset controls, exports, and instructor deployment supports.</p>
         </div>
     </footer>
     
@@ -3332,7 +3337,7 @@ Please help me distinguish: what the simulation directly shows, what it suggests
 
 
 
-        // Step 7.4 Functional Equivalence Coordination Game: term guide, reset, and PRF character pairs
+        // Step 7.4.1 Functional Equivalence Coordination Game: term guide, reset, and PRF character pairs
         const coordState = {
             rounds: 0,
             log: [],
@@ -3368,7 +3373,7 @@ Please help me distinguish: what the simulation directly shows, what it suggests
                 title: 'Engineering Warning Under Launch Pressure',
                 agentA: 'Engineering safety PRF: evidence, uncertainty, temperature sensitivity, professional duty, and the rule that launch should wait unless safety is adequately justified.',
                 agentB: 'Launch management PRF: mission commitments, schedule pressure, organizational credibility, prior launch experience, and the demand for decisive proof before delaying.',
-                task: 'Run the default settings. Then change only one or two sliders and identify what specific institutional change would shift the model from Breakdown to Conditional Coordination.',
+                task: 'Run the default settings. First change only one or two sliders and record what happens. If no one- or two-slider change reaches Conditional Coordination, that is the right finding: note what you tried and what it produced. Then try a combination of three or four changes. What does reaching Conditional Coordination require, and what does that suggest about the Rogers Commission idea of systemic failure?',
                 narrative: 'A technical team raises concern that cold conditions may compromise a safety-critical component. Management faces mission, schedule, credibility, and institutional pressure. The group must decide whether to proceed, delay, or require further safety review. This preset is inspired by the Challenger launch decision and Roger Boisjoly’s engineering-ethics case.',
                 values: [72, 42, 35, 28, 22, 88],
                 caution: 'This simulation does not reproduce the Challenger disaster. It is a simplified formal model for examining coordination failure under pressure. The historical case provides a real ethical context; the sliders are interpretive teaching variables, not measured historical quantities.'
@@ -3646,7 +3651,7 @@ Please help me distinguish: what the simulation directly shows, what it suggests
             const scores = computeCoordinationScores();
             const out = coordinationOutcome(scores);
             return {
-                build: 'Step 7.4 Functional Equivalence Coordination Game',
+                build: 'Step 7.4.1 Functional Equivalence Coordination Game',
                 selectedPair: coordState.selectedPair ? coordState.selectedPair.title : 'None',
                 rounds: coordState.rounds,
                 valueDifference: scores.valueDifference,
@@ -3683,7 +3688,7 @@ Current outcome: ${snap.outcome}
 Observed coordination outcome:
 ${getSavedValue('coordObservation') || '[not entered]'}
 
-Breakdown-to-Coordination test:
+Breakdown-to-Coordination test and systemic-failure release:
 ${getSavedValue('coordShiftTest') || '[not entered]'}
 
 Model assumptions:
@@ -3716,7 +3721,7 @@ Key settings:
 - Institutional fairness: ${snap.institutionalFairness}%
 - Conflict pressure: ${snap.conflictPressure}%
 
-My breakdown-to-coordination test:
+My breakdown-to-coordination test and systemic-failure release:
 ${shiftTest}
 
 My bridge note:
@@ -3729,7 +3734,7 @@ Please help me connect this pattern to one of my own Field Scans. Where might I 
         function collectPortfolioData() {
             const data = {
                 title: 'The Capability Lab Portfolio',
-                build: 'Production Step 7.4',
+                build: 'Production Step 7.4.1.1',
                 exportedAt: new Date().toISOString(),
                 completedSections: Array.from(completedSections),
                 notes: {},
@@ -3832,7 +3837,7 @@ Please help me connect this pattern to one of my own Field Scans. Where might I 
             const scores = getPilotScores();
             const row = {
                 exportedAt: new Date().toISOString(),
-                build: 'Production Step 7.4',
+                build: 'Production Step 7.4.1.1',
                 courseTerm: getSavedValue('pilotTerm'),
                 anonymizedId: getSavedValue('pilotAnonId'),
                 groupOrMode: getSavedValue('pilotGroup'),
